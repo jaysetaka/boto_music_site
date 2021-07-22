@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Boto Music Profile</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta
+      name="keywords"
+      content="music, south,africa,south african musican,boto,HOYINA!
+      MZANSI AFRIKA!"
+    />
+    <meta name="author" content="Boto-Sydney Tyobeka" />
+    <link rel="shortcut icon" href="images/favi.png" type="image/png" />
+    <meta property="og:title" content="Boto-Sydney Tyobeka" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="HOYINA! MZANSI AFRIKA!" />
+    <meta property="og:image" content="https://i.ibb.co/6vw9x3q/profile.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Boto-Sydney Tyobeka" />
+    <meta name="twitter:description" content="HOYINA! MZANSI AFRIKA!" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+    <style>
+      #lightbox {
+        /* ----- Positioning ----- */
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+
+        display: none;
+
+        background-color: rgba(0, 0, 0, 0.95);
+      }
+      #lightboxMusic {
+        /* ----- Positioning ----- */
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+
+        display: none;
+
+        background-color: rgba(0, 0, 0, 0.95);
+      }
+
+      #video-wrapper {
+        /* ----- Positioning ----- */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
+      }
+
+      #close-btn {
+        color: grey;
+        font-size: 25px;
+
+        position: fixed;
+        top: 3%;
+        right: 3%;
+        z-index: 2;
+
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+
+        -webkit-transition: transform 0.5s ease, color 0.5s ease;
+        -moz-transition: transform 0.5s ease, color 0.5s ease;
+        -ms-transition: transform 0.5s ease, color 0.5s ease;
+        -o-transition: transform 0.5s ease, color 0.5s ease;
+        transition: transform 0.5s ease, color 0.5s ease;
+      }
+
+      #close-btn:hover {
+        color: white;
+
+        cursor: pointer;
+
+        -webkit-transform: scale(1.2, 1.2);
+        -moz-transform: scale(1.2, 1.2);
+        -ms-transform: scale(1.2, 1.2);
+        -o-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2);
+
+        -webkit-transition: transform 0.5s ease, color 0.5s ease;
+        -moz-transition: transform 0.5s ease, color 0.5s ease;
+        -ms-transition: transform 0.5s ease, color 0.5s ease;
+        -o-transition: transform 0.5s ease, color 0.5s ease;
+        transition: transform 0.5s ease, color 0.5s ease;
+      }
+      #close-btn-music {
+        color: grey;
+        font-size: 25px;
+
+        position: fixed;
+        top: 3%;
+        right: 3%;
+        z-index: 2;
+
+        -webkit-transform: scale(1, 1);
+        -moz-transform: scale(1, 1);
+        -ms-transform: scale(1, 1);
+        -o-transform: scale(1, 1);
+        transform: scale(1, 1);
+
+        -webkit-transition: transform 0.5s ease, color 0.5s ease;
+        -moz-transition: transform 0.5s ease, color 0.5s ease;
+        -ms-transition: transform 0.5s ease, color 0.5s ease;
+        -o-transition: transform 0.5s ease, color 0.5s ease;
+        transition: transform 0.5s ease, color 0.5s ease;
+      }
+
+      #close-btn-music:hover {
+        color: white;
+
+        cursor: pointer;
+
+        -webkit-transform: scale(1.2, 1.2);
+        -moz-transform: scale(1.2, 1.2);
+        -ms-transform: scale(1.2, 1.2);
+        -o-transform: scale(1.2, 1.2);
+        transform: scale(1.2, 1.2);
+
+        -webkit-transition: transform 0.5s ease, color 0.5s ease;
+        -moz-transition: transform 0.5s ease, color 0.5s ease;
+        -ms-transition: transform 0.5s ease, color 0.5s ease;
+        -o-transition: transform 0.5s ease, color 0.5s ease;
+        transition: transform 0.5s ease, color 0.5s ease;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper" class="divided">
+      <!-- One -->
+      <section
+        class="
+          banner
+          style1
+          orient-left
+          content-align-left
+          image-position-right
+          fullscreen
+          onload-image-fade-in onload-content-fade-right
+        "
+      >
+        <div class="content">
+          <h1>Boto</h1>
+          <p class="major">
+            This Centurion based singer / song-writer has spent more than a
+            decade honing his art. A social commentator through his music, he
+            covers wide and varying topics about today’s South Africa and the
+            African continent. He brings a fresh new interpretation of the
+            African style and music tradition.
+          </p>
+          <ul class="actions stacked">
+            <li>
+              <a href="#first" class="button big wide smooth-scroll-middle"
+                >Get Started</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="https://i.ibb.co/XDX2WRc/mic3.jpg" alt="" />
+        </div>
+      </section>
+
+      <!-- Two -->
+      <section
+        class="
+          spotlight
+          style1
+          orient-right
+          content-align-left
+          image-position-center
+          onscroll-image-fade-in
+        "
+        id="first"
+      >
+        <div class="content">
+          <h2>When and how did you get started in music?</h2>
+          <p>
+            On or about 2001, my daughter Nandi who was 11 years at the time was
+            making great strides in her music career. Even though I'm an
+            engineer who had no interest in getting into music at the time, I
+            had listened to many of the African music greats during my time as a
+            student.
+          </p>
+          <p>
+            Let's just say that my daughter was the inspiration for my getting
+            started in music.
+          </p>
+          <ul class="actions stacked">
+            <li>
+              <a
+                href="http://www.songcastmusic.com/profiles/Boto"
+                target="_blank"
+                class="button"
+                >Boto Music Profile</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="https://i.ibb.co/YdtNCDy/bg2.jpg" alt="" />
+        </div>
+      </section>
+
+      <!-- Three -->
+      <section
+        class="
+          spotlight
+          style1
+          orient-left
+          content-align-left
+          image-position-center
+          onscroll-image-fade-in
+        "
+      >
+        <div class="content">
+          <h2>What are your career goals?</h2>
+          <p>
+            From early on, I decided that I'd invert the model and go into music
+            once I was done with a corporate career. My goal is to show that
+            there is more to music than the genre boxes that big music firms and
+            radio stations want musicians to tick. My music is #DISGENRE.
+          </p>
+          <p>
+            One of my dreams is one day to perform at the Carnegie Hall in New
+            York. I guess in a way that gives an idea of the type of music that
+            I want to make.
+          </p>
+          <ul class="actions stacked">
+            <li>
+              <a
+                href="https://itunes.apple.com/us/album/id1576813283"
+                target="_blank"
+                class="button"
+                >Catch Me On iTunes</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="https://i.ibb.co/ccsqjb5/bg1.jpg" alt="" />
+        </div>
+      </section>
+
+      <!-- Four -->
+      <section
+        class="
+          spotlight
+          style1
+          orient-right
+          content-align-left
+          image-position-center
+          onscroll-image-fade-in
+        "
+      >
+        <div class="content">
+          <h2>Who are your musical influences?</h2>
+          <p>
+            They are too many to try and list. To mention a few, Letta Mbuli,
+            Mirriam Makeba, Busi Mhlongo, John Coltrane, Chick Corea, Hugh
+            Masekela, Franco, Akendegue, Fela, Jonas Sgwangwa, Youssou N'Dour,
+            Burning Spear ...........
+          </p>
+
+          <ul class="actions stacked">
+            <li>
+              <a
+                href="http://open.spotify.com/album/63VTYwXbYpEyr9HXDohe3w"
+                target="_blank"
+                class="button"
+                >Catch Me On Spotify</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="https://i.ibb.co/6XLnhb0/abt5.jpg" alt="" />
+        </div>
+      </section>
+
+      <!-- Five-->
+      <section
+        class="
+          spotlight
+          style1
+          orient-left
+          content-align-left
+          image-position-center
+          onscroll-image-fade-in
+        "
+      >
+        <div class="content">
+          <h2>Talk about your latest project</h2>
+          <p>
+            My latest project is just one of those things that have to be done.
+            It is important to me because it references where this journey
+            began, before I could play a single instrument or learn to record
+            music. These melodies were initially recorded on cassette tapes
+            right at the beginning. The project, titled: “Hoyina! Mzansi
+            Afrika!” is a celebration through music of 20 years of democracy in
+            South Africa.
+          </p>
+          <p>
+            This project was long conceived but had to wait and has been brought
+            to fruition through the outstanding work of #SAMROMCSF
+          </p>
+          <ul class="actions stacked">
+            <li>
+              <a class="button" id="buttonMusic">Play Hoyina! Mzansi Afrika!</a>
+            </li>
+          </ul>
+        </div>
+        <div id="lightboxMusic">
+          <i id="close-btn-music" class="fa fa-times"></i>
+          <div id="video-wrapper">
+            <iframe
+              src="https://open.spotify.com/embed/track/3b6Kk2ZpxbAupkajWGjeGj"
+              width="100%"
+              height="380"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"
+            ></iframe>
+          </div>
+        </div>
+        <div class="image">
+          <img src="https://i.ibb.co/WcTQHvk/boto-songs.jpg" alt="" />
+        </div>
+      </section>
+
+      <!-- Six -->
+      <section
+        class="
+          spotlight
+          style1
+          orient-right
+          content-align-left
+          image-position-center
+          onscroll-image-fade-in
+        "
+      >
+        <div class="content">
+          <h2>Artist Biography</h2>
+          <p>
+            Boto has no boundaries as he belts tunes from realm of the praise
+            singing tradition all the way to harmonized chants, peppered with
+            choral, jazzy and sometimes classical notes that make his music
+            truly unique. Boto presents to you his first album ‘Hoyina Mzansi
+            Afrika!’ – a celebration, through music, of 20 years of democracy in
+            South Africa.
+            <br />
+            <br />
+          </p>
+
+          <ul class="actions stacked">
+            <li>
+              <a class="button" id="button">Watch Video</a>
+            </li>
+          </ul>
+        </div>
+        <div id="lightbox">
+          <i id="close-btn" class="fa fa-times"></i>
+          <div id="video-wrapper">
+            <iframe
+              width="560"
+              height="315"
+              sandbox="allow-same-origin allow-scripts"
+              src="https://open.tube/videos/embed/159ffa2a-f38f-4803-925e-a82b02ac15c6"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="image">
+          <img src="https://i.ibb.co/DgKPyfH/boto.jpg" alt="" />
+        </div>
+      </section>
+
+      <!-- Beginning Gallary -->
+      <section class="wrapper style1 align-center">
+        <div class="inner">
+          <h2>HOYINA! MZANSI AFRIKA!</h2>
+          <p>
+            2021 brings us another round of municipal elections in the country.
+            People will find one of the songs, #ZIYAMPOMPOZA on point as to the
+            usual election promises.
+          </p>
+        </div>
+
+        <!-- Gallery -->
+        <div class="gallery style2 medium lightbox onscroll-fade-in">
+          <article>
+            <a href="https://i.ibb.co/r3C73kK/1.jpg" class="image">
+              <img src="https://i.ibb.co/r3C73kK/1.jpg" alt="" />
+            </a>
+            <div class="caption">
+              <!-- <h3>Ipsum Dolor</h3>
+              <p>
+                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
+                ultrices.
+              </p> -->
+              <ul class="actions fixed">
+                <li><span class="button small">View Image</span></li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <a href="https://i.ibb.co/1TXPRLc/2.jpg" class="image">
+              <img src="https://i.ibb.co/1TXPRLc/2.jpg" alt="" />
+            </a>
+            <div class="caption">
+              <!-- <h3>Feugiat Lorem</h3>
+              <p>
+                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
+                ultrices.
+              </p> -->
+              <ul class="actions fixed">
+                <li><span class="button small">View Image</span></li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <a href="https://i.ibb.co/yXNVt2Z/3.jpg" class="image">
+              <img src="https://i.ibb.co/yXNVt2Z/3.jpg" alt="" />
+            </a>
+            <div class="caption">
+              <!-- <h3>Magna Amet</h3>
+              <p>
+                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
+                ultrices.
+              </p> -->
+              <ul class="actions fixed">
+                <li><span class="button small">View Image</span></li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <a href="https://i.ibb.co/c3WC0L7/4.jpg" class="image">
+              <img src="https://i.ibb.co/c3WC0L7/4.jpg" alt="" />
+            </a>
+            <div class="caption">
+              <!-- <h3>Sed Tempus</h3>
+              <p>
+                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
+                ultrices.
+              </p> -->
+              <ul class="actions fixed">
+                <li><span class="button small">View Image</span></li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <a href="https://i.ibb.co/FxfrkvP/5.jpg" class="image">
+              <img src="https://i.ibb.co/FxfrkvP/5.jpg" alt="" />
+            </a>
+            <div class="caption">
+              <!-- <h3>Ultrices Magna</h3>
+              <p>
+                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
+                ultrices.
+              </p> -->
+              <ul class="actions fixed">
+                <li><span class="button small">View Image</span></li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <a href="https://i.ibb.co/5YpJh7M/6.jpg" class="image">
+              <img src="https://i.ibb.co/5YpJh7M/6.jpg" alt="" />
+            </a>
+            <div class="caption">
+              <!-- <h3>Sed Tempus</h3>
+              <p>
+                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
+                ultrices.
+              </p> -->
+              <ul class="actions fixed">
+                <li><span class="button small">View Image</span></li>
+              </ul>
+            </div>
+          </article>
+          <article>
+            <a href="https://i.ibb.co/vsSxw0z/7.jpg" class="image">
+              <img src="https://i.ibb.co/vsSxw0z/7.jpg" alt="" />
+            </a>
+            <div class="caption">
+              <!-- <h3>Ipsum Lorem</h3>
+              <p>
+                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
+                ultrices.
+              </p> -->
+              <ul class="actions fixed">
+                <li><span class="button small">View Image</span></li>
+              </ul>
+            </div>
+          </article>
+          <!-- <article>
+            <a href="images/gallery/fulls/08.jpg" class="image">
+              <img src="images/gallery/thumbs/08.jpg" alt="" />
+            </a>
+            <div class="caption">
+              <h3>Magna Risus</h3>
+              <p>
+                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
+                ultrices.
+              </p>
+              <ul class="actions fixed">
+                <li><span class="button small">Details</span></li>
+              </ul>
+            </div>
+          </article> -->
+          <!-- <article>
+            <a href="images/gallery/fulls/09.jpg" class="image">
+              <img src="images/gallery/thumbs/09.jpg" alt="" />
+            </a>
+            <div class="caption">
+              <h3>Tempus Dolor</h3>
+              <p>
+                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
+                ultrices.
+              </p>
+              <ul class="actions fixed">
+                <li><span class="button small">Details</span></li>
+              </ul>
+            </div>
+          </article> -->
+          <!-- <article>
+            <a href="images/gallery/fulls/10.jpg" class="image">
+              <img src="images/gallery/thumbs/10.jpg" alt="" />
+            </a>
+            <div class="caption">
+              <h3>Sed Etiam</h3>
+              <p>
+                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
+                ultrices.
+              </p>
+              <ul class="actions fixed">
+                <li><span class="button small">Details</span></li>
+              </ul>
+            </div>
+          </article> -->
+          <!-- <article>
+            <a href="images/gallery/fulls/11.jpg" class="image">
+              <img src="images/gallery/thumbs/11.jpg" alt="" />
+            </a>
+            <div class="caption">
+              <h3>Magna Lorem</h3>
+              <p>
+                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
+                ultrices.
+              </p>
+              <ul class="actions fixed">
+                <li><span class="button small">Details</span></li>
+              </ul>
+            </div>
+          </article> -->
+          <!-- <article>
+            <a href="images/gallery/fulls/12.jpg" class="image">
+              <img src="images/gallery/thumbs/12.jpg" alt="" />
+            </a>
+            <div class="caption">
+              <h3>Ipsum Dolor</h3>
+              <p>
+                Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed
+                ultrices.
+              </p>
+              <ul class="actions fixed">
+                <li><span class="button small">Details</span></li>
+              </ul>
+            </div>
+          </article> -->
+        </div>
+      </section>
+
+      <!-- Six -->
+      <section class="wrapper style1 align-center">
+        <div class="inner">
+          <h2>Discography</h2>
+          <p>
+            This album would not have seen the light without the support of my
+            family: Dineo, Nandi and Loyiso. Your constructive criticism ensured
+            that I give this project my all.
+          </p>
+          <p>
+            The following people probably don’t realise their influence in my
+            taking a great interest in the arts and politics. I am grateful for
+            the positive effects and vibe of our encounters and friendship:
+            Nhlanganiso Dladla, Musa Mbhele, Sello Loate, Tshidi Moroka and Duma
+            Ndlovu.
+          </p>
+          <p>
+            To the lovely people of Mzansi: Your resilience and tolerance has
+            taken us this far - 20 years of democracy that the world has dubbed
+            ‘a miracle’. The road ahead is longer, rockier and thornier. It
+            requires us to muster all our resources and restore dignity to all –
+            UBUNTU.
+          </p>
+          <div class="items style1 medium onscroll-fade-in">
+            <section>
+              <span class="icon style2 major fa-gem"></span>
+              <h3>Quincy Jones -</h3>
+              <p>
+                “I like all music. The only music I don’t like is bad music.”
+              </p>
+            </section>
+            <section>
+              <span class="icon solid style2 major fa-music"></span>
+              <h3>Nile Rodgers -</h3>
+              <p>
+                “I don’t believe in the philosophy of stumbling across hit
+                records.”
+              </p>
+            </section>
+            <section>
+              <span class="icon solid style2 major fa-drum"></span>
+              <h3>Rick Rubin -</h3>
+              <p>“I don’t even know what a traditional producer is or does.”</p>
+            </section>
+            <section>
+              <span class="icon solid style2 major fa-pray"></span>
+              <h3>Brian Eno -</h3>
+              <p>“Honor thy error as a hidden intention.”</p>
+            </section>
+            <section>
+              <span class="icon solid style2 major fa-guitar"></span>
+              <h3>Phil Spector -</h3>
+              <p>
+                “I could tell you I’m the greatest fuckin’ record producer that
+                ever lived and that I’ll eat up all these cats in the studio if
+                they want to put their mouths right there and their money right
+                there.”
+              </p>
+            </section>
+            <section>
+              <span class="icon style2 major fa-heart"></span>
+              <h3>Nile Rodgers -</h3>
+              <p>
+                “It feels like my job is to support people. I support great
+                artists. When I worked with a symphony, I sat in the third
+                chair, not the first chair.”
+              </p>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seven -->
+      <section class="wrapper style1 align-center">
+        <div class="inner medium">
+          <h2>Contact Boto</h2>
+          <form action="POST" data-netlify="true action="#">
+            <div class="fields">
+              <div class="field half">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" value="" />
+              </div>
+              <div class="field half">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" value="" />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="6"></textarea>
+              </div>
+            </div>
+            <ul class="actions special">
+              <li>
+                <input
+                  type="submit"
+                  name="submit"
+                  id="submit"
+                  value="Send Message"
+                />
+              </li>
+            </ul>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="wrapper style1 align-center">
+        <div class="inner">
+          <ul class="icons">
+            <li>
+              <a
+                href="https://twitter.com/botocomms"
+                target="_blank"
+                class="icon brands style2 fa-twitter"
+                ><span class="label">Twitter</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://web.facebook.com/profile.php?id=100008314924948"
+                target="_blank"
+                class="icon brands style2 fa-facebook-f"
+                ><span class="label">Facebook</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/boto_za/"
+                target="_blank"
+                class="icon brands style2 fa-instagram"
+                ><span class="label">Instagram</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:styobeka@absamail.co.za"
+                target="_blank"
+                class="icon style2 fa-envelope"
+                ><span class="label">Email</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        // When the button is clicked make the lightbox fade in in the span of 1 second, hide itself and start the video
+        $("#button").on("click", function () {
+          $("#lightbox").fadeIn(1000);
+          $(this).hide();
+          var videoURL = $("#video").prop("src");
+          videoURL += "?autoplay=1";
+          $("#video").prop("src", videoURL);
+        });
+        $("#close-btn").on("click", function () {
+          $("#lightbox").fadeOut(500);
+          $("#button").show(250);
+        });
+        $("#buttonMusic").on("click", function () {
+          $("#lightboxMusic").fadeIn(1000);
+          $(this).hide();
+          var videoURL = $("#video").prop("src");
+          videoURL += "?autoplay=1";
+          $("#video").prop("src", videoURL);
+        });
+
+        // When the close button is clicked make the lightbox fade out in the span of 0.5 seconds and show the play button
+
+        $("#close-btn-music").on("click", function () {
+          $("#lightboxMusic").fadeOut(500);
+          $("#buttonMusic").show(250);
+        });
+      });
+    </script>
+  </body>
+</html>
